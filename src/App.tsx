@@ -18,10 +18,10 @@ interface AppProps {
 // 	return (
 // 		<div className="App">
 // 			<header className="App-header">
-// 				<h1> Workshop {title} </h1>
-//        <h1>{counter}</h1>
-// 				<button onClick={() => setCounter(counter + 1)}> increment</button>
-// 				<button onClick={() => setCounter(counter - 1)}> decrement</button>
+// 				<h3> Workshop {title} </h3>
+//        			<h1>{counter}</h1>
+// 				<button onClick={() => setCounter(counter + 1)}>Increment</button>
+// 				<button onClick={() => setCounter(counter - 1)}>Decrement</button>
 // 			</header>
 // 		</div>
 // 	);
@@ -59,10 +59,10 @@ class App extends Component<AppProps> {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<h5> Workshop {this.state.title} </h5>
+					<h3> Workshop {this.state.title} </h3>
 					<h1>{this.state.counter}</h1>
 					<button onClick={this.onIncrement}>Increment</button>
-					<button onClick={this.onDecrement}> Decrement</button>
+					<button onClick={this.onDecrement}>Decrement</button>
 				</header>
 			</div>
 		);
